@@ -28,10 +28,11 @@ FauxData Pro is a smart synthetic data generator built using Python and Flask. I
 ```
 pip install -r requirements.txt
 python app.py
-```
+
 ---
 ##Open in browser:
 http://127.0.0.1:5000
+```
 ##Folder Structure
 fauxdata-pro/
 ├── app.py
