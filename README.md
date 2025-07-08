@@ -42,3 +42,15 @@ fauxdata-pro/
 └── README.md
 
 ---
+🧠 New Feature: AI-generated Bios with GenAI
+You can now generate realistic fake bios using Generative AI!
+
+How it works:
+Select "AI-generated Bio" from the dropdown
+
+Enter number of bios to generate
+
+Click Generate – it uses the OpenAI API to create smart, human-like bios
+
+Example:
+“Samantha Blake is a software engineer at TechNova who loves leveraging cloud-based synergies.”
