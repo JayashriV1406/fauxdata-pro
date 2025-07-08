@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FauxData Pro</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td, th {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>FauxData Pro - Smart Data Generator</h1>
+
+    <form method="POST">
+        <label>Select data type:</label>
+        <select name="data_type">
+            <option value="Name">Name</option>
+            <option value="Email">Email</option>
+            <option value="Address">Address</option>
+            <option value="Job">Job</option>
+            <option value="Phone Number">Phone Number</option>
+            <option value="Company">Company</option>
+            <option value="Date of Birth">Date of Birth</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="City">City</option>
+            <option value="Country">Country</option>
+            <option value="URL">URL</option>
+            <option value="Username">Username</option>
+            <option value="Text Snippet">Text Snippet</option>
+        </select>
+
+        <label>How many entries?</label>
+        <input type="number" name="count" min="1" value="5">
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if data %}
+        <h3>Generated Data:</h3>
+        <table>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>
